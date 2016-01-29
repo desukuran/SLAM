@@ -255,7 +255,7 @@ Partial Class Form1
         Me.MinimumSize = New System.Drawing.Size(500, 400)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Source Live Audio Mixer"
+        Me.Text = "Source Live Audio Mixer -=- desukuran edit"
         Me.TrackContextMenu.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()

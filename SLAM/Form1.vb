@@ -46,6 +46,56 @@ Public Class Form1
         tf2.libraryname = "tf2\"
         Games.Add(tf2)
 
+        Dim gmod As New SourceGame
+        gmod.name = "Garry's Mod"
+        gmod.directory = "common\GarrysMod\"
+        gmod.ToCfg = "garrysmod\cfg\"
+        gmod.libraryname = "gmod\"
+        Games.Add(gmod)
+
+        Dim hl2dm As New SourceGame
+        hl2dm.name = "Half-Life 2 Deathmatch"
+        hl2dm.directory = "common\half-life 2 deathmatch\"
+        hl2dm.ToCfg = "hl2mp\cfg\"
+        hl2dm.libraryname = "hl2dm\"
+        Games.Add(hl2dm)
+
+        Dim l4d As New SourceGame
+        l4d.name = "Left 4 Dead"
+        l4d.directory = "common\Left 4 Dead\"
+        l4d.ToCfg = "left4dead\cfg\"
+        l4d.libraryname = "l4d\"
+        Games.Add(l4d)
+
+        Dim l4d2 As New SourceGame
+        l4d2.name = "Left 4 Dead 2"
+        l4d2.directory = "common\Left 4 Dead 2\"
+        l4d2.ToCfg = "left4dead2\cfg\"
+        l4d2.libraryname = "l4d2\"
+        Games.Add(l4d2)
+
+        Dim dods As New SourceGame
+        dods.name = "Day of Defeat Source"
+        dods.directory = "common\day of defeat source\"
+        dods.ToCfg = "dod\cfg\"
+        dods.libraryname = "dods\"
+        Games.Add(dods)
+
+        'TODO: I don't own Black Mesa to test this.
+        Dim bmesa As New SourceGame
+        bmesa.name = "Black Mesa (Early Access)"
+        bmesa.directory = "common\black mesa\"
+        bmesa.ToCfg = "blackmesa\cfg\"
+        bmesa.libraryname = "bmesa\"
+        Games.Add(bmesa)
+
+        Dim goldeye As New SourceGame
+        goldeye.name = "Goldeneye Source"
+        goldeye.directory = "sourcemods\"
+        goldeye.ToCfg = "gesource\cfg\"
+        goldeye.libraryname = "goldeye\"
+        Games.Add(goldeye)
+
         LoadGames()
 
         If My.Settings.StartEnabled Then
@@ -778,7 +828,7 @@ TryRelay: 'HACK: Try to read RelayCfg, if it fails it does it again.
         Dim UpdateText As String
 
         Using client As New HttpClient
-            Dim UpdateTextTask As Task(Of String) = client.GetStringAsync("http://slam.flankers.net/updates.php")
+            Dim UpdateTextTask As Task(Of String) = client.GetStringAsync("http://dethklan.com/SLAM/updates.php")
             UpdateText = Await UpdateTextTask
         End Using
 

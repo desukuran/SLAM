@@ -1,8 +1,11 @@
-# SLAM
+# SLAM - desukuran edit
 
 [Source Live Audio Mixer](http://slam.flankers.net/)
 
 SLAM is a new way to share sounds with your friends over the built in communication system of source games. With SLAM's super-simple design, you will be pleasing the ears of your audience in no time! 
+
+desukuran edit features:
+- Adding in games that are missing from the list (eg: gmod, hl2dm)
 
 Current features:
 - Simple in-game interface.
